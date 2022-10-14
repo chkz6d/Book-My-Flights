@@ -1,0 +1,20 @@
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> AIRLINES</th>
+            <th> DEPARTURE</th>
+            <th> DURATION</th>
+            <th> ARRIVAL</th>
+            <th> FARE/Person</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let flight of flights">
+            <td>{{ flight.airlines}}</td>
+            <td>{{ flight.departure_time}},{{ flight.source}}</td>
+            <td>{{ flight.journey_duration}}</td>
+            <td>{{ flight.arrival_time}},{{ flight.destination}}</td>
+            <td>{{ flight.fare_adult}}</td>
+        </tr>
+    </tbody>
+</table>

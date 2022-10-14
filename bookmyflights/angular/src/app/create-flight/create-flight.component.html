@@ -1,0 +1,73 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Create New Flights</h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label> From / Source</label>
+            <input type="text" class ="form-control" id = "source"
+                [(ngModel)] ="flight.source" name = "source">
+        </div>
+        
+        <div class="form-group">
+            <label> To / Destination</label>
+            <input type="text" class ="form-control" id = "destination"
+                [(ngModel)] ="flight.destination" name = "destination">
+        </div>
+        
+        <div class="form-group">
+            <label> Departure Date</label>
+            <input type="text" class ="form-control" id = "departure_date"
+                [(ngModel)] ="flight.departure_date" name = "departure_date">
+        </div>
+    
+        <div class="form-group">
+            <label> Departure Time</label>
+            <input type="text" class ="form-control" id = "departure_time"
+                [(ngModel)] ="flight.departure_time" name = "departure_time">
+        </div>
+
+        <div class="form-group">
+            <label> Departure Date</label>
+            <input type="text" class ="form-control" id = "departure_date"
+                [(ngModel)] ="flight.departure_date" name = "departure_date">
+        </div>
+        
+        <div class="form-group">
+            <label> Arrival Date</label>
+            <input type="text" class ="form-control" id = "arrival_date"
+                [(ngModel)] ="flight.arrival_date" name = "arrival_date">
+        </div>
+       
+        <div class="form-group">
+            <label> Arrival Time</label>
+            <input type="text" class ="form-control" id = "arrival_time"
+                [(ngModel)] ="flight.arrival_time" name = "arrival_time">
+        </div>
+        
+        <div class="form-group">
+            <label> Journey Duration</label>
+            <input type="text" class ="form-control" id = "journey_duration"
+                [(ngModel)] ="flight.journey_duration" name = "journey_duration">
+        </div>
+        
+        <div class="form-group">
+            <label> Fare / Adult</label>
+            <input type="text" class ="form-control" id = "fare_adult"
+                [(ngModel)] ="flight.fare_adult" name = "fare_adult">
+        </div>
+
+        <div class="form-group">
+            <label> Fare / Child</label>
+            <input type="text" class ="form-control" id = "fare_child"
+                [(ngModel)] ="flight.fare_child" name = "fare_child">
+        </div>
+
+        <div class="form-group">
+            <label> Total Seats</label>
+            <input type="text" class ="form-control" id = "total_seats"
+                [(ngModel)] ="flight.total_seats" name = "total_seats">
+        </div>
+    
+        <button class = "btn btn-success" type ="submit"></button>
+    </form>
+    </div>
